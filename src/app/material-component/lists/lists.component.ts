@@ -11,11 +11,7 @@ export class ListsComponent implements OnInit{
     }
     ngOnInit() {
       let result:any = localStorage.getItem('pokemons'); 
-      
       let conveert = JSON.parse(result)
-      console.log('result',conveert);
-      console.log('typeof', typeof conveert);
-
       this.pokemons= conveert
     }
 

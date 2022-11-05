@@ -3,7 +3,7 @@ import { getPokemonImage, getPokemonNumber, Pokemon } from 'src/app/_model/Pokem
 @Component({
   selector: 'app-card',
   templateUrl: './pokemon-card.component.html',
-  styleUrls: ['./pokemon-card.component.sass'],
+  styleUrls: ['./pokemon-card.component.sass' ,"/index.scss"],
 })
 export class CardComponent {
   @Input()

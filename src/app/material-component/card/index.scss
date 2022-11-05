@@ -1,0 +1,25 @@
+.box {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30%;
+
+.card-box {
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  font-family: "Signika", arial, sans-serif;
+  margin: 0 5px 50px;
+  border-radius: 7px;
+  border: 1px solid #fff;
+}
+}
+}
+.disabled {
+  color: red;
+}
+
+.enabled {
+  color: #ccc;
+}
