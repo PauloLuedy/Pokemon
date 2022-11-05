@@ -1,0 +1,38 @@
+
+<div class="box">
+<div class="card-box">
+<div class="pokemon-card" *ngIf="pokemon">
+  <div class="pokemon-card__image">
+    <!--    <img-->
+    <!--      [src]="pokemon.image"-->
+    <!--      alt="Pokemon Image">-->
+
+    <img
+      [src]="getPokemonImage(pokemon)"
+      alt="Pokemon Image">
+  </div>
+
+  <div class="pokemon-card__number">
+    Nº {{ getPokemonNumber(pokemon) }}
+  </div>
+
+  <div class="pokemon-card__name">
+    {{ pokemon.name }}
+  </div>
+
+  <div>
+    <section class="example-section" >
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="favorites" class="example-margin" style="margin-left: 7px;" [(ngModel)]="checked" (click)="onFavoriteClick(pokemon)"  [ngClass]="disabled ? 'disabled' : 'enabled'"></mat-icon>
+    </section>
+  </div>
+
+  <div class="pokemon-card__types">
+    <div class="pokemon-card__type"
+         *ngFor="let type of pokemon.types"
+         [class]="'pokemon-card__type--' + type.toLowerCase()">
+      {{ type }}
+    </div>
+  </div>
+</div>
+</div>
+</div>
